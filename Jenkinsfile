@@ -10,7 +10,7 @@ pipeline {
             steps {
 				sh 'cd ./code/frontend'	
 				sh 'npm install'
-				sh 'cd ../backend'
+				sh 'cd ./code/backend'
                 sh 'npm install'
             }
         }
@@ -21,7 +21,7 @@ pipeline {
             steps {
 				sh 'cd ./code/frontend'	
 				sh 'npm run build'
-				sh 'cd ../backend'
+				sh 'cd ./code/backend'
                 sh 'npm run build'
             }
         }
